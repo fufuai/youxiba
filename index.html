@@ -300,7 +300,11 @@
     <input type="text" id="searchInput" placeholder="请输入搜索关键字" onkeyup="searchLinks()">
     <div id="result"></div>
     <!-- 添加独立的文本描述 -->
-    <p class="ad-description">此页面展示了最新的游戏资源，快来发现更多惊喜！</p>
+    <div class="ad-description">
+        <p>此页面展示了最新的游戏资源，快来发现更多惊喜！</p>
+        <p>站里图片部分被压缩导致失真，以缓解加载压力，请放心浏览！</p>
+    </div>
+
 
     <div class="tag-filter">
         <button class="tag-button" data-tag="all">所有</button>
@@ -328,10 +332,10 @@
             <audio id="audio-player" controls style="display:none;"></audio> <!-- 隐藏默认控件 -->
         </div>
         <p>@公司名称 | TX有限公司<br>电话：010-82971111<br>网址：www.txkuozhanban.com<br>客服热线：400-800-8888</p>
-        <p>地址：北京市海淀区西二旗路10号北京邮电大学西门</p>
+        <p>地址：10 Anson Road, International Plaza 18-02</p>
 
 
-        <a href="#">用户协议</a> | <a href="#">隐私��策</a>
+        <a href="yinsizhengce/用户协议.html">用户协议</a> | <a href="yinsizhengce/隐私条款.html">隐私政策</a>
 
     </footer>
 
@@ -339,7 +343,8 @@
     <div class="modal" id="ageModal">
         <div class="modal-content">
             <p>您是否已满18周岁？</p>
-            <input type="checkbox" id="agreeTerms"> 我同意 <a href="#">用户协议</a> 和 <a href="#">隐私政策</a>
+            <input type="checkbox" id="agreeTerms"> 我同意 <a href="yinsizhengce/用户协议.html">用户协议</a> 和 <a
+                href="yinsizhengce/隐私条款.html">隐私政策</a>
             <br>
             <button id="confirmButton">是</button>
             <button id="exitButton">否</button>
@@ -788,7 +793,7 @@
 
         // 点击“否”按钮
         exitButton.addEventListener('click', () => {
-            window.location.href = 'https://www.google.com'; // 重定向到其他网站
+            window.location.href = 'https://www.baidu.com'; // 重定向到其他网站
         });
 
     </script>
